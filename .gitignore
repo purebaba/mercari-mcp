@@ -1,0 +1,23 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 编辑器/IDE配置
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+
+# OS文件
+.DS_Store
+Thumbs.db
+
+# 环境变量文件
+.env
+.env.*

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mercari-mcp"
+version = "0.1.0"
+description = "Mercari search MCP server"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=1.0.0",
+    "mercapi>=1.0.0",
+    "pydantic>=2.0.0",
+    "httpx>=0.24.0",
+    "typing-extensions>=4.0.0"
+]
+
+[project.scripts]
+mercari-mcp = "mercari_mcp.server:main"
+mercari-mcp-sse = "mercari_mcp.sse_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mercari_mcp"]
+
+[tool.hatch.envs.default]
+path = ".venv"
+dependencies = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0"
+] 

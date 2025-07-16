@@ -1,0 +1,18 @@
+# Mercari MCP服务器依赖项
+mcp>=1.0.0
+mercapi>=0.4.0
+pydantic>=2.0.0
+httpx>=0.27.0
+typing-extensions>=4.0.0
+
+# SSE模式依赖项
+fastapi>=0.104.0
+uvicorn>=0.24.0
+sse-starlette>=1.6.0
+
+# 开发依赖项
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+isort>=5.0.0
+mypy>=1.0.0 
